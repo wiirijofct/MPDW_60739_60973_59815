@@ -1,0 +1,24 @@
+# Print the moments for the first given video
+video_id = 't6f_O8a4sSg'
+video_data = combined_data["v_"+video_id]
+print(f"\nMoments for video ID {video_id}:")
+for i in range(len(video_data["timestamps"])):
+    print(f"Start: {video_data['timestamps'][i][0]}, End: {video_data['timestamps'][i][1]}, Label: {video_data['sentences'][i]}")
+    
+import os
+video_dir = "/home/gigag/Documents/mpdw/MPDW_60739_60973_59815/Proj/Week1/videos"
+videos = [os.path.join(video_dir, vid) for vid in os.listdir(video_dir)]
+
+import av
+i = 0
+for vid in videos:
+    i +=1
+    os.mkdir(f"{i}")
+    with av.open(vid) as container:
+        # Signal that we only want to look at keyframes.
+        stream = container.streams.video[0]
+        stream.codec_context.skip_frame = "NONKEY"
+    
+        for j, frame in enumerate(container.decode(stream)):
+            #print(frame)
+            frame.to_image().save(os.path.join(f"{i}", f"{j}.{i:04d}.jpg"), quality=80)
