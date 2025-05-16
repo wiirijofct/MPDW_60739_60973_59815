@@ -5,6 +5,8 @@
 \usepackage[expansion=false,shrink=10,stretch=10,final]{microtype} % Improved settings
 \usepackage{url}  % Add URL package for better URL line breaking
 \usepackage[hidelinks,breaklinks,final]{hyperref}
+\usepackage{float}
+\usepackage{booktabs}
 
 
 \begin{document}
@@ -55,50 +57,107 @@ To gain deeper insight into model behavior, we also explored CLIP interpretabili
 
 \vspace{2\baselineskip plus 0.5\baselineskip minus 0.5\baselineskip} % space sections out
 
-\section{Algorithms and Implementation}
-The system is built on a modular pipeline that prepares video data and metadata for indexing and retrieval using dual encoder architecture. The key components of this implementation include:
+\pagebreak
 
-\begin{itemize}
-    \item Video moment selection and parsing,
-    \item Frame extraction and keyframe identification,
-    \item Dual encoder embedding generation (text and vision),
-    \item OpenSearch index creation and document ingestion,
-    \item Search using text and embedding vectors (semantic search).
-\end{itemize}
+\section{System Architecture}
+Our Phase 2 system forms a five-stage pipeline that converts raw ActivityNet videos into an indexable,
+query-able, and interpretable LVLM service.
 
+\begin{enumerate}
+  \item \textbf{Pre-processing}  
+        \begin{itemize}
+        \item Trim videos to annotated moments and extract key-frames.
+        \item Merge timestamped captions from \texttt{val\_1.json} and \texttt{val\_2.json}.
+        \end{itemize}
+  \item \textbf{Multimodal Embedding Generation}  
+        \begin{itemize}
+        \item \emph{Sentence-BERT MPNet} $\!\to$ 768-d \texttt{caption\_vec} (semantic text search).  
+        \item \emph{CLIP ViT-B/32 -- text encoder} $\!\to$ 512-d \texttt{visual\_caption\_vec}.  
+        \item \emph{CLIP ViT-B/32 -- image encoder} $\!\to$512-d \texttt{keyframe\_vec}.
+        \end{itemize}
+  \item \textbf{Indexing (OpenSearch)}  
+        Three \texttt{knn\_vector} fields, HNSW (\texttt{M}=16, \texttt{ef}=256), plus metadata (timestamps, resolution).
+  \item \textbf{Cross-modal Retrieval API}  
+        \texttt{search(query, modality)} dispatches to one of  
+        \textit{text$\!\to$image}, \textit{image$\!\to$text}, \textit{image$\!\to$image} and returns top-\(k\) ranked hits.
+  \item \textbf{Retrieval-Augmented VQA}  
+        The best key-frame is fed, together with the user question, to \emph{LLaVA-Phi-3}.  
+        Answers and CLIP similarities are cached and logged.
+  \item \textbf{Interpretability Module}  
+        Generates (i) temporal similarity curves, (ii) Grad-CAM heat-maps for 10 frames, and (iii) a caption × frame
+        contrastive matrix.
+\end{enumerate}
 \pagebreak[3]
 
-\subsection{Embedding Representations}
-We employed a dual encoder approach using the following pre-trained models:
+\subsection{Embedding Representations and Index Schema}
+We moved from a \emph{dual} to a \textbf{tri-encoder} design so that the text and image
+branches share the same CLIP space.  
+Three independent vector fields are written to OpenSearch (Table~\ref{tab:fields}).
 
 \begin{itemize}
-    \item \textbf{Textual Embeddings:} Generated using the sentence-transformers/all-mpnet-base-v2 model from HuggingFace. Captions were tokenized and passed through the transformer model. We applied mean pooling across token embeddings to obtain a 768-dimensional sentence vector for each video caption.
-    \item \textbf{Visual Embeddings:} Generated for extracted keyframes using the ViT-B-32 variant of CLIP, loaded through open\_clip. Images were preprocessed and encoded using the CLIP image encoder. The resulting 512-dimensional vectors were normalized.
+  \item \textbf{Sentence-BERT (MPNet)}  
+        Captions $\rightarrow$ 768-d \texttt{caption\_vec}.  
+        Used for classic semantic \emph{text$\!\to$text} retrieval baselines.
+  \item \textbf{CLIP ViT-B/32 — text encoder}  
+        Captions $\rightarrow$ 512-d \texttt{visual\_caption\_vec}.  
+        Aligns captions with images and enables \emph{text$\!\to$image} queries.
+  \item \textbf{CLIP ViT-B/32 — image encoder}  
+        Key-frames $\rightarrow$ 512-d \texttt{keyframe\_vec}.  
+        Supports \emph{image$\!\to$image} and \emph{image$\!\to$text}.
 \end{itemize}
 
+\begin{table}[h]
+\centering
+\begin{tabular}{lcc}
+\toprule
+Field & Model & Dim. \\ \midrule
+\texttt{caption\_vec} & SBERT MPNet & 768 \\
+\texttt{visual\_caption\_vec} & CLIP (text) & 512 \\
+\texttt{keyframe\_vec} & CLIP (image) & 512 \\ \bottomrule
+\end{tabular}\label{tab:fields}
+\end{table}
+
 \begin{sloppypar}
-Each document in our OpenSearch index represents a keyframe extracted from a video. If the timestamp of a keyframe falls within the range of a moment's start and end time, a document is indexed for that (keyframe, moment) pair. As a result, the same keyframe can appear in multiple documents if it belongs to multiple overlapping moments. Each document includes metadata such as the video ID, moment timestamps, caption, keyframe image path, and their respective embeddings computed using MPNet (for text) and CLIP (for image).
+\textbf{Document granularity.}  
+One index document corresponds to a \emph{(key-frame, caption)} pair.  
+A key-frame that overlaps two temporal moments is therefore duplicated, each time
+with the relevant caption and its own ID.  
+Metadata stored alongside the vectors now includes:  
+\texttt{video\_id}, \texttt{start\_timestamp}, \texttt{end\_timestamp},
+\texttt{duration}, \texttt{resolution}, and the local \texttt{keyframe\_path}.
+All vectors are $\ell_2$-normalised before insertion so cosine similarity reduces
+to the inner-product HNSW metric configured in OpenSearch.
 \end{sloppypar}
+
 
 \paragraph{Contextual embeddings:}For visualizing contextual embeddings, we utilized the caption of one of our videos: 
 ``A man is in a skateboard track, then he throws a bowling ball that goes around and hits the pins''. 
 The resulting graphs of the layers zero to eleven can be seen in Fig.~\ref{hidden_layers}.
 
+\vspace{2\baselineskip plus 0.5\baselineskip minus 0.5\baselineskip} 
 
-\begin{figure}
+
+\begin{figure}[H]
 \includegraphics[width=0.95\textwidth]{../figures/hidden_layers.eps}
 \caption{Contextual embeddings}\label{hidden_layers}
 \end{figure}
 
+\vspace{2\baselineskip plus 0.5\baselineskip minus 0.5\baselineskip} 
+
 Surprisingly, in the first layer, the embeddings are very similar to their values in the eleventh layer, but this outcome is merely coincidental, while in the second layer we get something that would be more expected, that is, most embeddings are fairly close together with seemingly no relation or logic. With the progression of the layers, we can see the embeddings disperse and form sensible groups. Namely, we can see the terms ``bowling'' and ``pins'' very close together and far from most other words. This makes sense given how specific and relatively rare those words are. The same can be observed for skate, track and board --- the suffix of skateboard, hence the proximity. Lastly, the most obvious cluster, on the right: the most common english words. Words such as ``a'', ``the'', ``that'' and ``and'' which, due to the frequent and indiscriminate use that is given to them, hold very little semantic value and weight in the meaning of sentences.
+
 
 \paragraph{Positional embeddings:}By repeating the previous exercise with a sentence of the same word repeated 20 times instead, what we get is the positional embeddings of our sentence (see Fig.~\ref{pos_embeds}). The result is a phenomenon that can be explained by the gradual decrease of positional importance throughout the sentence. Stated in simpler terms, the farther a token is from the first word, the smaller the importance of its position. The first word is the one we can see down at the bottom, the farthest from all the others, as its position has the highest relevance. As we move forth in the sentence, the position relevance gradually decreases and we get increasingly similar embeddings. Due to this, we see the converging effect that results in the cluster of points we see at the top, with all the embeddings of the last words close together.
 
-\begin{figure}
+\vspace{3\baselineskip plus 0.5\baselineskip minus 0.5\baselineskip} 
+
+\begin{figure}[!htb]
   \centering
   \includegraphics[width=.5\textwidth, clip=true, trim = 15mm 0mm 0mm 0mm]{../figures/pos_embeds.eps}
   \caption{Positional embeddings}\label{pos_embeds}\label{img:positional_embeddings}
 \end{figure}
+
+\clearpage
 
 \subsection{Large Vision and Language Models}
 While Phase 2 delves deeper into large vision and language models, in Phase 1 we already used pretrained transformers:
@@ -136,7 +195,7 @@ In our system, we used retrieval-augmented VQA:
     \item LLaVA returns a grounded, natural language answer to the question based on the content of the frame.
 \end{enumerate}
 
-\vspace{2\baselineskip plus 0.5\baselineskip minus 0.5\baselineskip} % Add space between sections
+\clearpage
 
 \subsection{Attention}
 
