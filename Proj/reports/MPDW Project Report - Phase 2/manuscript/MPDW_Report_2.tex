@@ -94,14 +94,40 @@ Surprisingly, in the first layer, the embeddings are very similar to their value
 \end{figure}
 
 \subsection{Large Vision and Language Models}
-While Phase 2 will delve deeper into large vision and language models, in Phase 1 we already used pretrained transformers:
+While Phase 2 delves deeper into large vision and language models, in Phase 1 we already used pretrained transformers:
 
 \begin{itemize}
     \item \textbf{MPNet (All-MPNet-Base-V2)} for generating context-aware text embeddings.
     \item \textbf{CLIP (ViT-B/32)} to embed keyframes into a multimodal representation space.
 \end{itemize}
 
-These models enable semantic alignment between visual content and natural language descriptions.
+In Phase 2, we extended the use of CLIP to achieve full \textbf{cross-modal retrieval} functionality by embedding both keyframes and captions using CLIP’s respective image and text encoders. This allows us to represent both modalities in the same embedding space, enabling:
+
+\begin{itemize}
+    \item \textbf{Text-to-image retrieval}, where a natural language query retrieves relevant keyframes.
+
+    \item \textbf{Image-to-text retrieval}, where a visual frame can retrieve semantically aligned captions.
+
+    \item \textbf{Image-to-image} and \textbf{text-to-text retrieval}, leveraging the shared embedding space for similarity search across same-modality inputs.
+\end{itemize}
+
+All CLIP embeddings, whether from keyframes or captions, were indexed in OpenSearch, allowing for real-time similarity search.
+
+We also integrated \textbf{LLaVA (Large Language and Vision Assistant)} for visual question answering (VQA). LLaVA combines CLIP’s visual encoder with a language model fine-tuned for multimodal reasoning.
+
+In our system, we used retrieval-augmented VQA:
+
+\begin{enumerate}
+    \item A visual question is submitted.
+
+    \item The embedding for the question is computed using CLIP's text encoder.
+
+    \item A k-NN search is performed to retrieve the most relevant keyframe based on semantic similarity in the shared embedding space.
+
+    \item Both the retrieved frame and the question are passed to LLaVA.
+
+    \item LLaVA returns a grounded, natural language answer to the question based on the content of the frame.
+\end{enumerate}
 
 \vspace{2\baselineskip plus 0.5\baselineskip minus 0.5\baselineskip} % Add space between sections
 
