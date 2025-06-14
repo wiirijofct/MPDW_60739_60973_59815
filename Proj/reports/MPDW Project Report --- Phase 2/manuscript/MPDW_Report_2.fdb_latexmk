@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1749913948.07519 "/home/g/Documents/8Semestre/mpdw/MPDW_60739_60973_59815/Proj/reports/MPDW Project Report --- Phase 2/manuscript/MPDW_Report_2.tex" "MPDW_Report_2.pdf" "MPDW_Report_2" 1749913949.03545 0
+["pdflatex"] 1749914012.01444 "/home/g/Documents/8Semestre/mpdw/MPDW_60739_60973_59815/Proj/reports/MPDW Project Report --- Phase 2/manuscript/MPDW_Report_2.tex" "MPDW_Report_2.pdf" "MPDW_Report_2" 1749914012.98119 0
   "../figures/attention_heatmap_matrix.png" 1749895120 1846705 4db38ceee1cf7fd29b7463feaf01340f ""
   "../figures/attention_layers_document.eps" 1749895120 2267366 5db7073999dd8d89d7a3ce3c6d6bc4ae ""
   "../figures/attention_layers_query.eps" 1749895120 897269 a87ee779cef549e862fb1c41be0b88cb ""
@@ -14,7 +14,7 @@
   "../figures/sim_heatmap.png" 1749895122 37544 45187afc1e56bba983eb85304375c844 ""
   "../style/llncs.cls" 1749895120 43402 5fb5a2dc40571aa40f3d199c00cbb986 ""
   "/etc/texmf/web2c/texmf.cnf" 1749897833.88417 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/g/Documents/8Semestre/mpdw/MPDW_60739_60973_59815/Proj/reports/MPDW Project Report --- Phase 2/manuscript/MPDW_Report_2.tex" 1749913946.94445 28427 1ed229b5e628f036fc3a2ea5699bb005 ""
+  "/home/g/Documents/8Semestre/mpdw/MPDW_60739_60973_59815/Proj/reports/MPDW Project Report --- Phase 2/manuscript/MPDW_Report_2.tex" 1749914010.87868 28427 45de961065344b74c71bbfb1213e698a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx0900.tfm" 1136768653 3584 1a7de6c99457381c64abc1a7c545505f ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1136768653 3584 2d666ecf6d466d8b007246bc2f94d9da ""
@@ -104,9 +104,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1749897849.81754 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1749897918 8214555 e50a644d034eaa4496f61f71ccd39249 ""
-  "MPDW_Report_2.aux" 1749913948.98549 6415 c4c072c5a3db6c9cdd45084661e474d6 "pdflatex"
-  "MPDW_Report_2.out" 1749913948.98549 206 ca75d676d8609e5e394c5a24406fd200 "pdflatex"
-  "MPDW_Report_2.tex" 1749913946.94445 28427 1ed229b5e628f036fc3a2ea5699bb005 ""
+  "MPDW_Report_2.aux" 1749914012.92872 6415 a2fac6f737ebc2e2a49a5158adcb2404 "pdflatex"
+  "MPDW_Report_2.out" 1749914012.92872 206 7dd21adce4d9805222a6352bf6d08fe6 "pdflatex"
+  "MPDW_Report_2.tex" 1749914010.87868 28427 45de961065344b74c71bbfb1213e698a ""
   (generated)
   "MPDW_Report_2.aux"
   "MPDW_Report_2.log"
