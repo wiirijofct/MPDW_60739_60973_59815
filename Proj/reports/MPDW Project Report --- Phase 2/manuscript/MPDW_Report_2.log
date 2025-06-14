@@ -1,0 +1,628 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.6.14)  14 JUN 2025 16:12
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"/home/g/Documents/8Semestre/mpdw/MPDW_60739_60973_59815/Proj/reports/MPDW Project Report --- Phase 2/manuscript/MPDW_Report_2.tex"
+(/home/g/Documents/8Semestre/mpdw/MPDW_60739_60973_59815/Proj/reports/MPDW Project Report --- Phase 2/manuscript/MPDW_Report_2.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(../style/llncs.cls
+Document Class: llncs 2024/01/29 v2.24 
+ LaTeX document class for Lecture Notes in Computer Science
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\c@figure=\count193
+\c@table=\count194
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
+\c@tracingmulticols=\count195
+\mult@box=\box51
+\multicol@leftmargin=\dimen141
+\c@unbalance=\count196
+\c@collectmore=\count197
+\doublecol@number=\count198
+\multicoltolerance=\count199
+\multicolpretolerance=\count266
+\full@width=\dimen142
+\page@free=\dimen143
+\premulticols=\dimen144
+\postmulticols=\dimen145
+\multicolsep=\skip50
+\multicolbaselineskip=\skip51
+\partial@page=\box52
+\last@line=\box53
+\mc@boxedresult=\box54
+\maxbalancingoverflow=\dimen146
+\mult@rightbox=\box55
+\mult@grightbox=\box56
+\mult@firstbox=\box57
+\mult@gfirstbox=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\c@minrows=\count267
+\c@columnbadness=\count268
+\c@finalcolumnbadness=\count269
+\last@try=\dimen147
+\multicolovershoot=\dimen148
+\multicolundershoot=\dimen149
+\mult@nat@firstbox=\box95
+\colbreak@box=\box96
+\mc@col@check@num=\count270
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/aliascnt.sty
+Package: aliascnt 2018/09/07 v1.5 Alias counters (HO)
+)
+\c@chapter=\count271
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 379.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 380.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 381.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 382.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 383.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 384.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 385.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 386.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 387.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 388.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 389.
+LaTeX Info: Redefining \vec on input line 394.
+\tocchpnum=\dimen150
+\tocsecnum=\dimen151
+\tocsectotal=\dimen152
+\tocsubsecnum=\dimen153
+\tocsubsectotal=\dimen154
+\tocsubsubsecnum=\dimen155
+\tocsubsubsectotal=\dimen156
+\tocparanum=\dimen157
+\tocparatotal=\dimen158
+\tocsubparanum=\dimen159
+\@tempcntc=\count272
+\fnindent=\dimen160
+\c@@inst=\count273
+\c@@auth=\count274
+\c@auco=\count275
+\instindent=\dimen161
+\authrun=\box97
+\authorrunning=\toks17
+\tocauthor=\toks18
+\titrun=\box98
+\titlerunning=\toks19
+\toctitle=\toks20
+\c@theorem=\count276
+\c@case=\count277
+\c@conjecture=\count278
+\c@corollary=\count279
+\c@definition=\count280
+\c@example=\count281
+\c@exercise=\count282
+\c@lemma=\count283
+\c@note=\count284
+\c@problem=\count285
+\c@property=\count286
+\c@proposition=\count287
+\c@question=\count288
+\c@solution=\count289
+\c@remark=\count290
+\headlineindent=\dimen162
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen163
+\Gin@req@width=\dimen164
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
+ (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count291
+)
+\MT@toks=\toks22
+\MT@tempbox=\box99
+\MT@count=\count292
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1059.
+LaTeX Info: Redefining \leftprotrusion on input line 1060.
+\MT@prot@toks=\toks23
+LaTeX Info: Redefining \rightprotrusion on input line 1078.
+LaTeX Info: Redefining \textls on input line 1368.
+\MT@outer@kern=\dimen165
+LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
+\MT@listname@count=\count293
+ (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2023/03/13 v3.1a Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 902.
+LaTeX Info: Redefining \lslig on input line 902.
+\MT@outer@space=\skip52
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
+)) (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+) (/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)) (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+ (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count294
+)
+\@linkdim=\dimen166
+\Hy@linkcounter=\count295
+\Hy@pagecounter=\count296
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count297
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `breaklinks' set `true' on input line 4062.
+Package hyperref Info: Option `final' set `true' on input line 4062.
+Package hyperref Info: Hyper figures OFF on input line 4179.
+Package hyperref Info: Link nesting OFF on input line 4184.
+Package hyperref Info: Hyper index ON on input line 4187.
+Package hyperref Info: Plain pages OFF on input line 4194.
+Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4446.
+\c@Hy@tempcnt=\count298
+LaTeX Info: Redefining \url on input line 4784.
+\XeTeXLinkMargin=\dimen167
+ (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count299
+\Field@Width=\dimen168
+\Fld@charsize=\dimen169
+Package hyperref Info: Hyper figures OFF on input line 6063.
+Package hyperref Info: Link nesting OFF on input line 6068.
+Package hyperref Info: Hyper index ON on input line 6071.
+Package hyperref Info: backreferencing OFF on input line 6078.
+Package hyperref Info: Link coloring OFF on input line 6083.
+Package hyperref Info: Link coloring with OCG OFF on input line 6088.
+Package hyperref Info: PDF/A mode OFF on input line 6093.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count300
+\c@Item=\count301
+\c@Hfootnote=\count302
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count303
+\c@bookmark@seq@number=\count304
+ (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip53
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count305
+\float@exts=\toks24
+\float@box=\box100
+\@float@everytoks=\toks25
+\@floatcapt=\box101
+) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen170
+\lightrulewidth=\dimen171
+\cmidrulewidth=\dimen172
+\belowrulesep=\dimen173
+\belowbottomsep=\dimen174
+\aboverulesep=\dimen175
+\abovetopsep=\dimen176
+\cmidrulesep=\dimen177
+\cmidrulekern=\dimen178
+\defaultaddspace=\dimen179
+\@cmidla=\count306
+\@cmidlb=\count307
+\@aboverulesep=\dimen180
+\@belowrulesep=\dimen181
+\@thisruleclass=\count308
+\@lastruleclass=\count309
+\@thisrulewidth=\dimen182
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count310
+\l__pdf_internal_box=\box102
+) (./MPDW_Report_2.aux)
+\openout1 = `MPDW_Report_2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count311
+\scratchdimen=\dimen183
+\scratchbox=\box103
+\nofMPsegments=\count312
+\nofMParguments=\count313
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count314
+\MPscratchDim=\dimen184
+\MPnumerator=\count315
+\makeMPintoPDFobject=\count316
+\everyMPtoPDFconversion=\toks27
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+LaTeX Info: Redefining \microtypecontext on input line 12.
+Package microtype Info: Applying patch `item' on input line 12.
+Package microtype Info: Applying patch `toc' on input line 12.
+Package microtype Info: Applying patch `eqnum' on input line 12.
+Package microtype Info: Applying patch `footnote' on input line 12.
+Package microtype Info: Applying patch `verbatim' on input line 12.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No font expansion.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+ (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+)
+Package hyperref Info: Link coloring OFF on input line 12.
+ (./MPDW_Report_2.out) (./MPDW_Report_2.out)
+\@outlinefile=\write3
+\openout3 = `MPDW_Report_2.out'.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 37.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 37.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 37.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 37.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 70.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Underfull \hbox (badness 3803) in paragraph at lines 78--80
+[]\T1/cmr/bx/n/10 Indexing (OpenSearch) \T1/cmr/m/n/10 Three \T1/cmtt/m/n/10 knn_vector \T1/cmr/m/n/10 fields, HNSW (\T1/cmtt/m/n/10 M\T1/cmr/m/n/10 =16,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--104
+[]\T1/cmr/bx/n/10 CLIP ViT-B/32 ^^V text en-coder \T1/cmr/m/n/10 Cap-tions $\OMS/cmsy/m/n/10 !$ \T1/cmr/m/n/10 512-d
+ []
+
+[2{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Package epstopdf Info: Source file: <../figures/hidden_layers.eps>
+(epstopdf)                    date: 2025-06-14 10:58:40
+(epstopdf)                    size: 154569 bytes
+(epstopdf)             Output file: <../figures/hidden_layers-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-06-14 10:58:40
+(epstopdf)                    size: 91250 bytes
+(epstopdf)             Command: <repstopdf --outfile=../figures/hidden_layers-eps-converted-to.pdf ../figures/hidden_layers.eps>
+(epstopdf)             \includegraphics on input line 141.
+Package epstopdf Info: Output file is already uptodate.
+<../figures/hidden_layers-eps-converted-to.pdf, id=44, 1373.13pt x 867.24pt>
+File: ../figures/hidden_layers-eps-converted-to.pdf Graphic file (type pdf)
+<use ../figures/hidden_layers-eps-converted-to.pdf>
+Package pdftex.def Info: ../figures/hidden_layers-eps-converted-to.pdf  used on input line 141.
+(pdftex.def)             Requested size: 329.7663pt x 208.26096pt.
+ [3
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.151 
+       <../figures/hidden_layers-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <../figures/pos_embeds.eps>
+(epstopdf)                    date: 2025-06-14 10:58:42
+(epstopdf)                    size: 18967 bytes
+(epstopdf)             Output file: <../figures/pos_embeds-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-06-14 10:58:42
+(epstopdf)                    size: 12061 bytes
+(epstopdf)             Command: <repstopdf --outfile=../figures/pos_embeds-eps-converted-to.pdf ../figures/pos_embeds.eps>
+(epstopdf)             \includegraphics on input line 156.
+Package epstopdf Info: Output file is already uptodate.
+<../figures/pos_embeds-eps-converted-to.pdf, id=161, 433.62pt x 433.62pt>
+File: ../figures/pos_embeds-eps-converted-to.pdf Graphic file (type pdf)
+<use ../figures/pos_embeds-eps-converted-to.pdf>
+Package pdftex.def Info: ../figures/pos_embeds-eps-converted-to.pdf  used on input line 156.
+(pdftex.def)             Requested size: 173.56177pt x 192.50706pt.
+ [4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.160 \clearpage
+                 <../figures/pos_embeds-eps-converted-to.pdf>] [5
+
+]
+<../figures/example_1.png, id=205, 1284.8pt x 722.7pt>
+File: ../figures/example_1.png Graphic file (type png)
+<use ../figures/example_1.png>
+Package pdftex.def Info: ../figures/example_1.png  used on input line 228.
+(pdftex.def)             Requested size: 312.40906pt x 175.7232pt.
+<../figures/example_2.png, id=207, 867.99281pt x 487.8225pt>
+File: ../figures/example_2.png Graphic file (type png)
+<use ../figures/example_2.png>
+Package pdftex.def Info: ../figures/example_2.png  used on input line 234.
+(pdftex.def)             Requested size: 312.40906pt x 175.57874pt.
+<../figures/example_3.png, id=210, 868.74562pt x 488.57532pt>
+File: ../figures/example_3.png Graphic file (type png)
+<use ../figures/example_3.png>
+Package pdftex.def Info: ../figures/example_3.png  used on input line 240.
+(pdftex.def)             Requested size: 312.40906pt x 175.7006pt.
+ [6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.249 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.249 
+       <../figures/example_1.png (PNG copy)> <../figures/example_2.png>] [7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.258 
+       <../figures/example_3.png>]
+Package epstopdf Info: Source file: <../figures/self_att_heads.eps>
+(epstopdf)                    date: 2025-06-14 10:58:42
+(epstopdf)                    size: 2539279 bytes
+(epstopdf)             Output file: <../figures/self_att_heads-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-06-14 10:58:42
+(epstopdf)                    size: 100123 bytes
+(epstopdf)             Command: <repstopdf --outfile=../figures/self_att_heads-eps-converted-to.pdf ../figures/self_att_heads.eps>
+(epstopdf)             \includegraphics on input line 265.
+Package epstopdf Info: Output file is already uptodate.
+<../figures/self_att_heads-eps-converted-to.pdf, id=238, 2023.56pt x 1300.86pt>
+File: ../figures/self_att_heads-eps-converted-to.pdf Graphic file (type pdf)
+<use ../figures/self_att_heads-eps-converted-to.pdf>
+Package pdftex.def Info: ../figures/self_att_heads-eps-converted-to.pdf  used on input line 265.
+(pdftex.def)             Requested size: 329.7663pt x 249.7693pt.
+ [8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.269 \clearpage
+                 <../figures/self_att_heads-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <../figures/attention_layers_document.eps>
+(epstopdf)                    date: 2025-06-14 10:58:40
+(epstopdf)                    size: 2267366 bytes
+(epstopdf)             Output file: <../figures/attention_layers_document-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-06-14 10:58:40
+(epstopdf)                    size: 94910 bytes
+(epstopdf)             Command: <repstopdf --outfile=../figures/attention_layers_document-eps-converted-to.pdf ../figures/attention_layers_document.eps>
+(epstopdf)             \includegraphics on input line 273.
+Package epstopdf Info: Output file is already uptodate.
+<../figures/attention_layers_document-eps-converted-to.pdf, id=321, 1445.4pt x 1084.05pt>
+File: ../figures/attention_layers_document-eps-converted-to.pdf Graphic file (type pdf)
+<use ../figures/attention_layers_document-eps-converted-to.pdf>
+Package pdftex.def Info: ../figures/attention_layers_document-eps-converted-to.pdf  used on input line 273.
+(pdftex.def)             Requested size: 312.40906pt x 234.3068pt.
+Package epstopdf Info: Source file: <../figures/attention_layers_query.eps>
+(epstopdf)                    date: 2025-06-14 10:58:40
+(epstopdf)                    size: 897269 bytes
+(epstopdf)             Output file: <../figures/attention_layers_query-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-06-14 10:58:40
+(epstopdf)                    size: 24963 bytes
+(epstopdf)             Command: <repstopdf --outfile=../figures/attention_layers_query-eps-converted-to.pdf ../figures/attention_layers_query.eps>
+(epstopdf)             \includegraphics on input line 280.
+Package epstopdf Info: Output file is already uptodate.
+<../figures/attention_layers_query-eps-converted-to.pdf, id=323, 1445.4pt x 1084.05pt>
+File: ../figures/attention_layers_query-eps-converted-to.pdf Graphic file (type pdf)
+<use ../figures/attention_layers_query-eps-converted-to.pdf>
+Package pdftex.def Info: ../figures/attention_layers_query-eps-converted-to.pdf  used on input line 280.
+(pdftex.def)             Requested size: 312.40906pt x 234.3068pt.
+ [9
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.284 \clearpage
+                
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.284 \clearpage
+                 <../figures/attention_layers_document-eps-converted-to.pdf> <../figures/attention_layers_query-eps-converted-to.pdf>]
+<../figures/lang_vis_temp_similarity1.png, id=461, 1520.68124pt x 1015.795pt>
+File: ../figures/lang_vis_temp_similarity1.png Graphic file (type png)
+<use ../figures/lang_vis_temp_similarity1.png>
+Package pdftex.def Info: ../figures/lang_vis_temp_similarity1.png  used on input line 297.
+(pdftex.def)             Requested size: 312.40906pt x 208.67331pt.
+<../figures/lang_vis_temp_similarity2.png, id=463, 1520.68124pt x 1015.795pt>
+File: ../figures/lang_vis_temp_similarity2.png Graphic file (type png)
+<use ../figures/lang_vis_temp_similarity2.png>
+Package pdftex.def Info: ../figures/lang_vis_temp_similarity2.png  used on input line 303.
+(pdftex.def)             Requested size: 312.40906pt x 208.67331pt.
+ [10
+
+] [11
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.307 \clearpage
+                
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.307 \clearpage
+                 <../figures/lang_vis_temp_similarity1.png> <../figures/lang_vis_temp_similarity2.png>]
+<../figures/sim_heatmap.png, id=483, 902.37125pt x 705.63625pt>
+File: ../figures/sim_heatmap.png Graphic file (type png)
+<use ../figures/sim_heatmap.png>
+Package pdftex.def Info: ../figures/sim_heatmap.png  used on input line 317.
+(pdftex.def)             Requested size: 312.40906pt x 244.29536pt.
+ [12
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.323 
+       <../figures/sim_heatmap.png>]
+<../figures/attention_heatmap_matrix.png, id=494, 1124.2pt x 1044.90375pt>
+File: ../figures/attention_heatmap_matrix.png Graphic file (type png)
+<use ../figures/attention_heatmap_matrix.png>
+Package pdftex.def Info: ../figures/attention_heatmap_matrix.png  used on input line 326.
+(pdftex.def)             Requested size: 312.40906pt x 290.37079pt.
+ [13
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.344     \item C
+                 orresponding captions were merged and aligned using metadat... <../figures/attention_heatmap_matrix.png>] [14] [15] [16] (./MPDW_Report_2.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+Package rerunfilecheck Info: File `MPDW_Report_2.out' has not changed.
+(rerunfilecheck)             Checksum: CA75D676D8609E5E394C5A24406FD200;206.
+ ) 
+Here is how much of TeX's memory you used:
+ 11180 strings out of 474222
+ 178354 string characters out of 5748733
+ 1934975 words of memory out of 5000000
+ 33256 multiletter control sequences out of 15000+600000
+ 567702 words of font info for 54 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,8n,79p,1951b,517s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on MPDW_Report_2.pdf (16 pages, 5968260 bytes).
+PDF statistics:
+ 608 PDF objects out of 1000 (max. 8388607)
+ 330 compressed objects within 4 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 8839 words of extra memory for PDF output out of 10000 (max. 10000000)
+
